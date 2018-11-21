@@ -10,6 +10,16 @@ installing git, open terminal
 sudo apt-get install git
 ```
 
+**setting up git**
+
+updating your email and name
+
+```
+git config --global user.name "FIRST_NAME LAST_NAME"
+git config --global user.email "MY_NAME@up.edu.ph"
+```
+
+
 **to start your repository if you are the first (for Cid lang)**
 
 ```
@@ -120,7 +130,7 @@ bundle install
 type in the terminal
 
 ```
-cd HOU\bin
+cd HOU/bin
 ```
 
 open terminal and type
