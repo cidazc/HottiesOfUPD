@@ -59,12 +59,13 @@ type in terminal
 sudo apt-get install ruby-full
 ```
 
-**installing sqlite3**
+**installing sqlite3 and nodejs**
 
 type in terminal
 ```
 sudo apt-get update
 sudo apt-get install sqlite3 libsqlite3-dev
+sudo apt-get install nodejs
 ```
 
 **installing dependencies**
@@ -85,11 +86,8 @@ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 type in terminal
 ```
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
-
 echo 'eval "$(rbenv init -)"' >> ~/.bashrc
-
 # Then source .bashrc
-
 source ~/.bashrc
 ```
 
@@ -113,6 +111,7 @@ type in terminal
 ```
 sudo gem install bundler
 sudo gem install rails
+bundle install
 ```
 
 ## How running rails
@@ -121,7 +120,7 @@ sudo gem install rails
 type in the terminal
 
 ```
-cd HottiesOfUPD
+cd HOU\bin
 ```
 
 open terminal and type
@@ -133,5 +132,5 @@ rails server
 in the browser type
 
 ```
-rails server
+localhost:3000
 ```
