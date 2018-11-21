@@ -77,13 +77,13 @@ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 
 type in terminal
 ```
-$ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
 
-$ echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+echo 'eval "$(rbenv init -)"' >> ~/.bashrc
 
 # Then source .bashrc
 
-$ source ~/.bashrc
+source ~/.bashrc
 ```
 
 use rbenv to install ruby type
@@ -126,14 +126,4 @@ cd HottiesOfUPD
 ```
 open your browser and type
 ```
-localhost:8000
-```
-
-## Opening the administrative section of the website
-
-**log-in**
-
-to go to the log-in portal type in the url bar of the browser
-```
-localhost:8000/admin/
 ```
