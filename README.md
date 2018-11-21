@@ -43,6 +43,13 @@ git commit -m "Your comment goes here"
 git push origin master
 ```
 
+
+**to get new stuff from github**
+```
+git pull origin master
+```
+
+
 ## How to install dependencies
 
 **installing ruby**
