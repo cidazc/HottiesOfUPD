@@ -49,12 +49,22 @@ git push origin master
 
 type in terminal
 ```
+sudo apt-get install ruby-full
+```
+
+**installing sqlite3**
+
+type in terminal
+```
+sudo apt-get update
+sudo apt-get install sqlite3 libsqlite3-dev
 ```
 
 **installing rails**
 
 type in terminal
 ```
+gem install rails
 ```
 
 ## How to run the website (no info yet)
