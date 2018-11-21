@@ -13,7 +13,7 @@ installing git, open terminal
 sudo apt-get install git
 ```
 
-**to start your repository if you are the first**
+**to start your repository if you are the first (for Cid lang)**
 
 ```
 echo "# HottiesOfUPD" >> README.md
