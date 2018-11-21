@@ -105,6 +105,7 @@ rbenv global 2.5.0
 
 type in terminal
 ```
+sudo gem install bundler
 sudo gem install rails
 ```
 
