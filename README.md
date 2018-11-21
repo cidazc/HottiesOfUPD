@@ -101,9 +101,8 @@ then do this
 ```
 rbenv install -l #this is to list all ruby versions
 # For example you let’s install ruby 2.5.0
-rbenv install 2.5.0
-rbenv global 2.5.0
-
+rbenv install 2.5.1
+rbenv global 2.5.1
 ```
 
 
@@ -116,21 +115,23 @@ sudo gem install bundler
 sudo gem install rails
 ```
 
-## How to make a rails project (Only done once by one person)
-No need to do this actually
-**New project**
-
-open the directory then type
-```
-rails new HottiesOfUPD
-```
+## How running rails
 
 **open the folder**
-then type
+type in the terminal
 
 ```
 cd HottiesOfUPD
 ```
-open your browser and type
+
+open terminal and type
 ```
+rails server
+```
+
+
+in the browser type
+
+```
+rails server
 ```
