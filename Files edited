@@ -1,0 +1,5 @@
+app/views/welcome/index.html.erb
+config/routes.rb
+app/controllers/articles_controller.rb
+app/views/articles/new.html.erb
+end 5.6
