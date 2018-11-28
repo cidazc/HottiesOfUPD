@@ -38,27 +38,36 @@ open the folder where you want to put your git first
 ```
 git clone https://github.com/cidazc/HottiesOfUPD.git
 ```
-**to add all the files with change**
+
+**Steps to pushing to git**
+when you make changes and want it to be uploaded
+
+***1) add all the files with change***
 ```
 git add .
 ```
 
-**to add a comment to the files you changed**
+***2) add a comment to the files you changed***
 ```
 git commit -m "Your comment goes here"
 ```
 
-**to push your changes to the master**
+***3) push your changes to the master***
 ```
 git push origin master
 ```
 
 
-**to get new stuff from github**
+**Step for pulling from git**
+Getting the updated files to your computer
 ```
 git pull origin master
 ```
 
+**Step for merging conflicts**
+when people edit the same file differently, and needs to push them both
+
+you laugh here haha
 
 ## How to install dependencies
 
@@ -92,6 +101,7 @@ type in terminal
 ```
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 ```
+
 **rbenv shit**
 
 type in terminal
@@ -125,7 +135,7 @@ sudo gem install rails
 bundle install
 ```
 
-## How running rails
+## How to run rails
 
 **open the folder**
 type in the terminal
