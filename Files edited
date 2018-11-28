@@ -6,4 +6,7 @@ app/views/articles/show.html.erb
 app/views/articles/index.html.erb
 app/models/article.rb
 app/views/articles/edit.html.erb
-end 5.8
+app/views/articles/_form.html.erb
+app/controllers/comments_controller.rb
+app/views/comments/_comment.html.erb
+end 6.2
