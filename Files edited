@@ -5,4 +5,5 @@ app/views/articles/new.html.erb
 app/views/articles/show.html.erb
 app/views/articles/index.html.erb
 app/models/article.rb
+app/views/articles/edit.html.erb
 end 5.8
