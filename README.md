@@ -40,6 +40,7 @@ git clone https://github.com/cidazc/HottiesOfUPD.git
 ```
 
 **Steps to pushing to git**
+
 when you make changes and want it to be uploaded
 
 ***1) add all the files with change***
@@ -59,12 +60,14 @@ git push origin master
 
 
 **Step for pulling from git**
+
 Getting the updated files to your computer
 ```
 git pull origin master
 ```
 
 **Step for merging conflicts**
+
 when people edit the same file differently, and needs to push them both
 
 you laugh here haha
@@ -92,7 +95,29 @@ sudo apt-get install nodejs
 type in terminal
 ```
 sudo apt-get install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm3 libgdbm-dev
+```
+
+**installing postgres**
+```
 sudo apt-get install postgresql-server-dev-10
+
+```
+
+**make the user**
+
+it has to be dickz
+```
+sudo -u postgres createuser -s dickz
+```
+
+run the postgre console
+```
+sudo -u postgres psql
+```
+
+then type the password
+```
+postgres=# \password password
 ```
 
 **install rbenv**
@@ -135,6 +160,22 @@ sudo gem install rails
 bundle install
 ```
 
+## installing heroku in your machine
+**installing heroku**
+```
+sudo snap install --classic heroku
+```
+**log-in heroku**
+```
+heroku login
+```
+there is still a problem in the buildpacks and deploying heroku
+
+```
+remote.heroku.url=https://git.heroku.com/salty-ravine-33636.git
+remote.heroku.fetch=+refs/heads/*:refs/remotes/heroku/*
+```
+
 ## How to run rails
 
 **open the folder**
@@ -147,6 +188,11 @@ cd HOU/bin
 open terminal and type
 ```
 rails server
+```
+
+then type this to view the SQL statements
+```
+ActiveRecord::Base.logger = Logger.new STDOUT
 ```
 
 
