@@ -2,14 +2,13 @@ body {
   background-color: #F4139F;
   color: #fff;
   margin: 5vw;
-  font-family: Comic Sans MS;
+  font-family: Sans Serif;
   font-size: 2vw;
   line-height: 2.8vw;
 }
 
 p, ol, ul, td {
-  font-family: Comic Sans MS;
-  font-size: 2vw;
+  font-family: Sans Serif;
   line-height: 2.8vw;
 }
 
@@ -84,6 +83,11 @@ label {
 }
 
 @font-face {
-  font-family: 'Comic Sans MS';
-  src: url('COMIC.TTF');
+  font-family: 'Futura Extra Black';
+  src: url('futura.ttf');
+}
+
+@font-face {
+  font-family: 'Futura Book';
+  src: url('futura2.ttf');
 }
