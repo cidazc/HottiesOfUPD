@@ -1,3 +1,14 @@
+
+.mean {
+  font-family: Futura Extra Black;
+  color: #FFD3F0;
+}
+
+.girls {
+  font-family: Futura Book;
+}
+
+
 body {
   background-color: #F4139F;
   color: #fff;
@@ -19,15 +30,15 @@ pre {
 }
 
 a {
-  color: #FFB6E6;
+  color: #FFD3F0;
 
   &:visited {
-    color: #FFB6E6;
+    color: #FFD3F0;
   }
 
   &:hover {
     color: #fff;
-    background-color: #FFB6E6;
+    background-color: #FFD3F0;
   }
 }
 

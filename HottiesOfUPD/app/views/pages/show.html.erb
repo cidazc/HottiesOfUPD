@@ -1,20 +1,32 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @page.name %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @page.description %>
-</p>
-
-<h2>Comments</h2>
-<%= render @page.comments %>
-
-<h2>Add a comment:</h2>
-<%= render 'comments/form' %>
-
-<%= link_to 'Edit', edit_page_path(@page) %> |
-<%= link_to 'Back', pages_path %>
+<body>
+	<div class="show1">
+		<h1 class="mean">
+			<strong>NAME:</strong>
+		</h1>
+		<h1 class="girls">
+			<%= @page.name %>
+		</h1>
+	</div>
+	<br>
+	<div class="show1">
+		<h4 class="mean">
+		  <strong>DESCRIPTION:</strong>
+		</h4>
+		<h4 class="girls">
+			<%= @page.description %>
+		</h4>
+	</div>
+	<br>
+	<br>
+	<div class="show2">
+		<h2 class="mean">COMMENTS:</h2>
+		<%= render @page.comments %>
+		<br>
+		<h2 class="mean">WHAT DO YOU THINK?</h2>
+		<%= render 'comments/form' %>
+		<%= link_to 'Edit', edit_page_path(@page) %> |
+		<%= link_to 'Back', pages_path %>
+	</div>
+</body>
