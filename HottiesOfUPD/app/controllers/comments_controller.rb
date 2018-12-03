@@ -1,18 +1,12 @@
-# File: app/controllers/comments_controller.rb
 class CommentsController < ApplicationController
   def create
-    @comment = Comment.new(params[:comment])
-    if @comment.save
-      ;flash[:notice] = 'Comment was successfully created.'
-      redirect_to(@comment.page)
-    else
-      flash[:notice] = "Error creating comment: #{@comment.errors}"
-      redirect_to(@comment.page)
+    @page = Page.find(params[:page_id])
+    @comment = @page.comments.create(comment_params)
+    redirect_to page_path(@page)
+  end
+
+  private
+    def comment_params
+      params.require(:comment).permit(:commenter, :body)
     end
-  end
-  def destroy
-    @comment = Comment.find(params[:id])
-    @comment.destroy
-    redirect_to(@comment.page)
-  end
 end

@@ -2,10 +2,10 @@
 
 one:
   name: MyString
-  text: MyText
+  body: MyText
   page: one
 
 two:
   name: MyString
-  text: MyText
+  body: MyText
   page: two
