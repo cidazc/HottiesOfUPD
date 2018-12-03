@@ -5,3 +5,50 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+# def seed_pages
+#   Page.destroy_all
+#   Page.create!([{
+#     name: "Sean Ryan Chan",
+#     description: "Siomai Lord"
+#   },
+#   {
+#     name: "Makki Villaluz",
+#     description: "Banana hater"
+#   },
+#   {
+#     name: "Carlo Mediarito",
+#     description: "Debugger forever"
+#   }])
+#
+#   p "Created #{Page.count} pages"
+# end
+
+def seed_pages
+  Page.destroy_all
+  30.times do
+    Page.create(
+      name: Faker::Name.name,
+      description: Faker::Lorem.paragraph(3)
+    )
+  end
+  p "Created #{Page.count} pages"
+end
+
+def seed_comments
+  Comment.destroy_all
+  pages = Page.all
+  pages.each do |page|
+    12.times do
+      Comment.create(
+        name: Faker::Name.name,
+        body: Faker::Lorem.sentence(8),
+        page_id: page.id
+      )
+    end
+  end
+  p "Created #{Comment.count} comments"
+end
+
+seed_pages
+seed_comments
