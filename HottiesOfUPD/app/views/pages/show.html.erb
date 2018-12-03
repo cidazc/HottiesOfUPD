@@ -18,6 +18,14 @@
 			<%= @page.description %>
 		</h4>
 	</div>
+  <% if @page.image.attached? %>
+  <!-- @post.image.present? will always return true, use attached? to check presence -->
+    <p>
+      <br>
+      <%= image_tag @page.image %>
+    </p>
+  <% end %>
+
 	<br>
 	<br>
 	<div class="show2">
