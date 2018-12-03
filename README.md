@@ -118,10 +118,9 @@ use rbenv to install ruby type
 ```
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 ```
-then do this
+then do this, we need to use version 2.5.1
 ```
 rbenv install -l #this is to list all ruby versions
-# For example you let’s install ruby 2.5.0
 rbenv install 2.5.1
 rbenv global 2.5.1
 ```
@@ -143,15 +142,21 @@ bundle install
 type in the terminal
 
 ```
-cd HOU/bin
+cd HottiesofUPD
 ```
 
 open terminal and type
 ```
 rails server
 ```
+or
+```
+rails s
+```
+
 
 then type this to view the SQL statements
+just for documentation purposes
 ```
 ActiveRecord::Base.logger = Logger.new STDOUT
 ```
