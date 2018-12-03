@@ -66,11 +66,13 @@ Getting the updated files to your computer
 git pull origin master
 ```
 
-**Step for merging conflicts**
+**Step for resetting to the github version**
 
-when people edit the same file differently, and needs to push them both
+```
+git reset --hard origin/master
+git clean -f
 
-you laugh here haha
+```
 
 ## How to install dependencies
 
