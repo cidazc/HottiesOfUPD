@@ -1,30 +1,43 @@
-<h1>Pages</h1>
+<head>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Text</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+    <title>Pages - Hotties Of UPD</title>
 
-  <tbody>
-    <% @pages.each do |page| %>
-      <tr>
-        <td><%= page.name %></td>
-        <td><%= page.description %></td>
-        <td><%= page.text %></td>
-        <td><%= link_to 'Show', page %></td>
-        <td><%= link_to 'Edit', edit_page_path(page) %></td>
-        <td><%= link_to 'Destroy', page, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+</head>
 
-<br>
+<body>
+  <div class="page">
+    <h1>Pages</h1>
 
-<%= link_to 'New Page', new_page_path %>
-<%= link_to 'Home Page', controller: 'welcome' %>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Text</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
+      <div class="table">
+        <tbody>
+          <% @pages.each do |page| %>
+            <tr>
+              <td><%= page.name %></td>
+              <td><%= page.description %></td>
+              <td><%= page.text %></td>
+              <td><%= link_to 'Show', page %></td>
+              <td><%= link_to 'Edit', edit_page_path(page) %></td>
+              <td><%= link_to 'Destroy', page, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            </tr>
+          <% end %>
+        </tbody>
+       </div> 
+    </table>
+
+    <br>
+
+    <%= link_to 'New Page', new_page_path %>
+    <%= link_to 'Home Page', controller: 'welcome' %>
+
+  </div>
+
+</body>

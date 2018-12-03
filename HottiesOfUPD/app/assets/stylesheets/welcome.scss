@@ -1,3 +1,18 @@
 // Place all the styles related to the Welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+div.welc	{
+	color: #FFFFFF;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+  	left: 50%;
+  	-ms-transform: translate(-50%, -50%);
+  	transform: translate(-50%, -50%);
+  	
+  	font-size: xx-large;
+	}
+

@@ -1,14 +1,14 @@
 body {
-  background-color: #fff;
+  background-color: #FF69B4;
   color: #333;
   margin: 33px;
-  font-family: verdana, arial, helvetica, sans-serif;
+  font-family: Comic Sans MS;
   font-size: 13px;
   line-height: 18px;
 }
 
 p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
+  font-family: Comic Sans MS;
   font-size: 13px;
   line-height: 18px;
 }
@@ -81,4 +81,9 @@ div {
 
 label {
   display: block;
+}
+
+@font-face {
+  font-family: 'Comic Sans MS';
+  src: url('COMIC.TTF');
 }
