@@ -13,7 +13,6 @@
         <tr>
           <th>Name</th>
           <th>Description</th>
-          <th>Text</th>
           <th colspan="3"></th>
         </tr>
       </thead>
@@ -23,14 +22,13 @@
             <tr>
               <td><%= page.name %></td>
               <td><%= page.description %></td>
-              <td><%= page.text %></td>
               <td><%= link_to 'Show', page %></td>
               <td><%= link_to 'Edit', edit_page_path(page) %></td>
               <td><%= link_to 'Destroy', page, method: :delete, data: { confirm: 'Are you sure?' } %></td>
             </tr>
           <% end %>
         </tbody>
-       </div> 
+       </div>
     </table>
 
     <br>

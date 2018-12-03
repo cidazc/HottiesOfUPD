@@ -32,7 +32,7 @@ git push -u origin master
 
 ```
 
-**to start your repository if there are files already**
+**to start your repository if someone has na sa github**
 
 open the folder where you want to put your git first
 ```
@@ -97,29 +97,6 @@ type in terminal
 sudo apt-get install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm3 libgdbm-dev
 ```
 
-**installing postgres**
-```
-sudo apt-get install postgresql-server-dev-10
-
-```
-
-**make the user**
-
-it has to be dickz
-```
-sudo -u postgres createuser -s dickz
-```
-
-run the postgre console
-```
-sudo -u postgres psql
-```
-
-then type the password
-```
-postgres=# \password password
-```
-
 **install rbenv**
 
 type in terminal
@@ -158,22 +135,6 @@ type in terminal
 sudo gem install bundler
 sudo gem install rails
 bundle install
-```
-
-## installing heroku in your machine
-**installing heroku**
-```
-sudo snap install --classic heroku
-```
-**log-in heroku**
-```
-heroku login
-```
-there is still a problem in the buildpacks and deploying heroku
-
-```
-remote.heroku.url=https://git.heroku.com/salty-ravine-33636.git
-remote.heroku.fetch=+refs/heads/*:refs/remotes/heroku/*
 ```
 
 ## How to run rails
