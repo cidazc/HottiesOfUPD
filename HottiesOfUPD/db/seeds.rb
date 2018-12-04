@@ -26,7 +26,7 @@
 
 def seed_pages
   Page.destroy_all
-  30.times do
+  rand(10).times do
     Page.create(
       name: Faker::Name.name,
       description: Faker::Lorem.paragraph(3)
@@ -39,7 +39,7 @@ def seed_comments
   Comment.destroy_all
   pages = Page.all
   pages.each do |page|
-    12.times do
+    rand(0..15).times do
       Comment.create(
         name: Faker::Name.name,
         body: Faker::Lorem.sentence(8),
@@ -50,5 +50,20 @@ def seed_comments
   p "Created #{Comment.count} comments"
 end
 
+def seed_likes
+  Like.destroy_all
+  pages = Page.all
+  pages.each do |page|
+    rand(0..10).times do
+      Like.create(
+        name: Faker::Name.name,
+        page_id: page.id
+      )
+    end
+  end
+  p "Created #{Like.count} likes"
+end
+
 seed_pages
 seed_comments
+seed_likes
