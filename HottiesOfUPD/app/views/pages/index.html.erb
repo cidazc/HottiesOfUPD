@@ -21,7 +21,9 @@
         <tbody>
           <% @pages.each do |page| %>
             <tr>
-              <td><%= page.name %></td>
+              <td><b><%= page.name %></b></td>
+              <td> Likes: </td>
+              <td><%= page.likes.count %></td>
               <td><%= link_to 'Show', page %></td>
               <td><%= link_to 'Edit', edit_page_path(page) %></td>
               <td><%= link_to 'Destroy', page, method: :delete, data: { confirm: 'Are you sure?' } %></td>
