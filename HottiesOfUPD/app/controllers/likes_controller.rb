@@ -1,7 +1,7 @@
 class LikesController < ApplicationController
   def create
     @page = Page.find(params[:page_id])
-    @comment = @page.likes.create(like_params)
+    @like = @page.likes.create(like_params)
     redirect_to page_path(@page)
   end
 
