@@ -2,7 +2,9 @@ This is for 165 project
 
 ## Github shortcuts
 
-**to install git**
+*first time users*
+
+**how to install git**
 
 installing git, open terminal
 
@@ -19,29 +21,16 @@ git config --global user.name "FIRST_NAME LAST_NAME"
 git config --global user.email "MY_NAME@up.edu.ph"
 ```
 
-
-**to start your repository if you are the first (for Cid lang)**
-
-```
-echo "# HottiesOfUPD" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/cidazc/HottiesOfUPD.git
-git push -u origin master
-
-```
-
-**to start your repository if someone has na sa github**
+**to copy this repository from github**
 
 open the folder where you want to put your git first
 ```
 git clone https://github.com/cidazc/HottiesOfUPD.git
 ```
 
-**Steps to pushing to git**
+*Steps to pushing to git*
 
-when you make changes and want it to be uploaded
+when you make changes and want it to be uploaded (pushed to github)
 
 ***1) add all the files with change***
 ```
@@ -59,7 +48,7 @@ git push origin master
 ```
 
 
-**Step for pulling from git**
+*Step for pulling from git*
 
 Getting the updated files to your computer
 ```
@@ -67,7 +56,7 @@ git pull origin master
 ```
 
 **Step for resetting to the github version**
-
+this is incredibly useful if you somehow break the code
 ```
 git reset --hard origin/master
 git clean -f
@@ -92,7 +81,7 @@ sudo apt-get install sqlite3 libsqlite3-dev
 sudo apt-get install nodejs
 ```
 
-**installing dependencies**
+**installing the other dependencies**
 
 type in terminal
 ```
@@ -106,7 +95,7 @@ type in terminal
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 ```
 
-**rbenv shit**
+**fixing rbenv shortcut**
 
 type in terminal
 ```
@@ -116,17 +105,13 @@ echo 'eval "$(rbenv init -)"' >> ~/.bashrc
 source ~/.bashrc
 ```
 
-use rbenv to install ruby type
+Now we use rbenv to install ruby version 2.5.1
 ```
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
-```
-then do this, we need to use version 2.5.1
-```
 rbenv install -l #this is to list all ruby versions
 rbenv install 2.5.1
 rbenv global 2.5.1
 ```
-
 
 
 **installing rails**
@@ -140,22 +125,30 @@ bundle install
 
 ## How to run rails
 
-**open the folder**
-type in the terminal
+**running for the first time on your pc**
 
+open the folder by
+typing in the terminal
 ```
 cd HottiesofUPD
 ```
 
-open terminal and type
+we need to migrate the ORM of Ruby to the SQLite Backend. To do that we type this.
+```
+bin/rails db:migrate
+```
+we need to now populate the data.
+```
+bin/rails db:seed
+```
+
+
+**Opening the web app**
+
+This is also what you do when running for the 2nd or more time on your pc
 ```
 rails server
 ```
-or
-```
-rails s
-```
-
 
 then type this to view the SQL statements
 just for documentation purposes
@@ -164,7 +157,7 @@ ActiveRecord::Base.logger = Logger.new STDOUT
 ```
 
 
-in the browser type
+Go now to your browser and type
 
 ```
 localhost:3000
