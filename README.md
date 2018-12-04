@@ -187,6 +187,7 @@ type in terminal
 sudo gem install bundler
 sudo gem install rails
 bundle install
+rails active_storage:install
 ```
 
 ## How to run rails
