@@ -1,4 +1,69 @@
-This is for 165 project
+# Hotties of UPD
+
+Welcome to Hotties of UPD. This the app we made to let you see the different hotties of UPD.
+
+## Quick Installation and Run Guide
+for Ubuntu:
+
+(installing ruby)
+```
+sudo apt-get install ruby-full
+```
+
+(installing rails and app dependencies)
+```
+sudo apt-get update
+sudo apt-get install sqlite3 libsqlite3-dev
+sudo apt-get install nodejs
+sudo apt-get install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm3 libgdbm-dev
+```
+
+(installing rbenv, very important)
+```
+git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+source ~/.bashrc
+git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+# IMPORTANT TO GET 2.5.1
+rbenv install 2.5.1
+rbenv global 2.5.1
+```
+(installing rails)
+```
+sudo gem install bundler
+sudo gem install rails
+bundle install
+```
+
+(assuming with git)
+type this to clone the repository
+```
+git clone https://github.com/cidazc/HottiesOfUPD.git
+```
+
+open the folder and run bundle install (incase some gems are not yet installed)
+```
+cd HottiesOfUPD
+bundle install
+```
+
+(run the first time migrations for the app)
+```
+bin/rails db:drop:all
+bin/rails db:migrate
+bin/rails db:seed
+```
+
+(run this in terminal to start the app)
+```
+rails server
+```
+(open this link in the browser)
+```
+localhost:3000
+```
+
 
 ## Github shortcuts
 
