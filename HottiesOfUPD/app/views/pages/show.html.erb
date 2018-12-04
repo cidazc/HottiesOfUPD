@@ -11,9 +11,7 @@
       <%= @page.name %>
     </h1>
     <br>
-    </div>
-    <div class="show1">
-    <h2 class="mean">
+    <h3 class="mean">
       <% if @page.likes.count == 1%>
         LIKE:
       <% end %>
@@ -21,7 +19,7 @@
         LIKES:
       <% end %>
       <%= @page.likes.count %>
-    </h2>
+    </h3>
   </div>
   <br>
   <div class="show1">
@@ -39,24 +37,25 @@
       <%= image_tag @page.image%>
     </p>
     <% end %>
-
       <br>
-      <br>
-      <div class="show2">
+    <div class="show2">
         <h2 class="mean">COMMENTS:</h2>
         <%= render @page.comments %>
-          <br>
+    </div>
+    <br>
+    <div class="com">
+      <div class="show2">
           <h2 class="mean">WHAT DO YOU THINK?</h2>
           <%= render 'comments/form' %>
-            <%= link_to 'Edit', edit_page_path(@page) %>
-              |
-              <%= link_to 'Back', pages_path %>
+
       </div>
       <div class="show2">
           <h2 class="mean">LIKE THIS PERSON?</h2>
           <%= render 'likes/form' %>
-            <%= link_to 'Edit', edit_page_path(@page) %>
-              |
-              <%= link_to 'Back', pages_path %>
       </div>
+    </div>
+    <br><br>
+    <%= link_to 'Edit Page', edit_page_path(@page) %>
+              |
+    <%= link_to 'Back', pages_path %>
 </body>
