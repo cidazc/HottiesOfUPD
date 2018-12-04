@@ -1,0 +1,9 @@
+<p>
+  Liked by <%= like.name %>
+</p>
+
+<p>
+  <%= link_to 'Delete Like', [like.page, like],
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %>
+</p>

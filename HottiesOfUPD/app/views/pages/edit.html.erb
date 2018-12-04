@@ -1,6 +1,8 @@
 <h1>Editing Page</h1>
 
 <%= render 'form', page: @page %>
+<%= render @page.comments %>
+<%= render @page.likes %>
 
 <%= link_to 'Show', @page %> |
 <%= link_to 'Back', pages_path %>

@@ -1,40 +1,60 @@
-<p id="notice"><%= notice %></p>
+<p id="notice">
+  <%= notice %>
+</p>
 
 <body>
-	<div class="show1">
-		<h1 class="mean">
-			<strong>NAME:</strong>
-		</h1>
-		<h1 class="girls">
-			<%= @page.name %>
-		</h1>
-	</div>
-	<br>
-	<div class="show1">
-		<h4 class="mean">
-		  <strong>DESCRIPTION:</strong>
-		</h4>
-		<h4 class="girls">
-			<%= @page.description %>
-		</h4>
-	</div>
+  <div class="show1">
+    <h1 class="mean">
+      <strong>NAME:</strong>
+    </h1>
+    <h1 class="girls">
+      <%= @page.name %>
+    </h1>
+    <br>
+    <h2 class="mean">
+      <% if @page.likes.count == 1%>
+        LIKE:
+      <% end %>
+      <% if @page.likes.count != 1%>
+        LIKES:
+      <% end %>
+      <%= @page.likes.count %>
+    </h2>
+  </div>
+  <br>
+  <div class="show1">
+    <h4 class="mean">
+      <strong>DESCRIPTION:</strong>
+    </h4>
+    <h4 class="girls">
+      <%= @page.description %>
+    </h4>
+  </div>
   <% if @page.image.attached? %>
-  <!-- @post.image.present? will always return true, use attached? to check presence -->
+    <!-- @post.image.present? will always return true, use attached? to check presence -->
     <p>
       <br>
       <%= image_tag @page.image %>
     </p>
-  <% end %>
+    <% end %>
 
-	<br>
-	<br>
-	<div class="show2">
-		<h2 class="mean">COMMENTS:</h2>
-		<%= render @page.comments %>
-		<br>
-		<h2 class="mean">WHAT DO YOU THINK?</h2>
-		<%= render 'comments/form' %>
-		<%= link_to 'Edit', edit_page_path(@page) %> |
-		<%= link_to 'Back', pages_path %>
-	</div>
+      <br>
+      <br>
+      <div class="show2">
+        <h2 class="mean">COMMENTS:</h2>
+        <%= render @page.comments %>
+          <br>
+          <h2 class="mean">WHAT DO YOU THINK?</h2>
+          <%= render 'comments/form' %>
+            <%= link_to 'Edit', edit_page_path(@page) %>
+              |
+              <%= link_to 'Back', pages_path %>
+      </div>
+      <div class="show2">
+          <h2 class="mean">LIKE THIS PERSON?</h2>
+          <%= render 'likes/form' %>
+            <%= link_to 'Edit', edit_page_path(@page) %>
+              |
+              <%= link_to 'Back', pages_path %>
+      </div>
 </body>
