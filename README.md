@@ -45,6 +45,7 @@ git clone https://github.com/cidazc/HottiesOfUPD.git
 open the folder and run bundle install (incase some gems are not yet installed)
 ```
 cd HottiesOfUPD
+rails active_storage:install
 bundle install
 ```
 
